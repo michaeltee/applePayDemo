@@ -107,8 +107,9 @@ extension BuySwagViewController: PKPaymentAuthorizationViewControllerDelegate {
             print("responseString = \(responseString)")
         }
         task.resume()
-        completion(PKPaymentAuthorizationStatus.Success) 
         */
+        completion(PKPaymentAuthorizationStatus.Success) 
+        
     }
 
     func paymentAuthorizationViewControllerDidFinish(controller: PKPaymentAuthorizationViewController) {
